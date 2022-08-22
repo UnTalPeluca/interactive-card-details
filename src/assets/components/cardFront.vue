@@ -55,7 +55,7 @@ const formatCardNumber = computed(() => {
   const regex = /^(\d{0,4})(\d{0,4})(\d{0,4})(\d{0,4})$/g
   const noLetters = props.cardNumber?.replace(/^([^0-9]*)$/)
   const onlyNumbers = noLetters?.replace(/[^\d]/g, '')
-  const leadingZeros = ('0'.repeat(16) + onlyNumbers).slice(-16)
+  const leadingZeros = (onlyNumbers + '0'.repeat(16)).slice(0, 16)
   return leadingZeros?.replace(regex, (regex, $1, $2, $3, $4) =>
     [$1, $2, $3, $4].filter(group => !!group).join(' ')
   )
