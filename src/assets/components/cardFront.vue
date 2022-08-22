@@ -8,7 +8,7 @@
           <img class="h-7 xl:h-12" src="@/assets/images/card-logo.svg" alt="">
         </div>
         <div class="flex flex-col gap-4 text-white xl:gap-6">
-          <p class="text-lg xl:text-3xl">{{ eCardNumber }}</p>
+          <p class="text-lg xl:text-3xl tracking-widest">{{ eCardNumber }}</p>
           <div class="flex justify-between text-3xs xl:text-sm">
             <p class="uppercase truncate w-6/12">{{ eCardName }}</p>
             <p>{{ eMonth }}/{{ eYear }}</p>
