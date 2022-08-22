@@ -5,7 +5,7 @@
       {{ title }}
     </label>
     <div
-      class="flex items-center p-[1px] rounded-[9px] focus-within:bg-gradient-to-br focus-within:from-gra-light-blue focus-within:to-gra-violet"
+      class="flex items-center p-[1px] rounded-[9px]  hover:bg-gradient-to-br focus-within:bg-gradient-to-br from-gra-light-blue to-gra-violet"
       :class="error ? 'bg-light-red' : 'bg-light-grey'">
       <input :id="inputName" onpaste="return false" ondrop="return false" :maxlength="length"
         class="cursor-pointer placeholder:text-deep-violet/25 placeholder:font-bold p-2 px-3.5 w-full focus:outline-0 rounded-lg"
