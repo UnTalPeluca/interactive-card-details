@@ -9,7 +9,7 @@
             :cardExpYear="card.userData.expYear" />
         </div>
       </div>
-      <div class="mx-auto w-11/12 max-w-xs sm:max-w-lg xl:max-w-sm xl:w-1/2">
+      <div class="mx-auto w-11/12 pb-8 sm:pb-12 max-w-xs sm:max-w-lg xl:pb-0 xl:max-w-sm xl:w-1/2">
         <CardForm />
       </div>
     </div>
